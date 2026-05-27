@@ -2,7 +2,7 @@
 name: arch-lifecycle-deploy-ops-methodology
 description: "Use when an architect must run the deployment-and-operations handoff stage, preserve the full lifecycle-stage doctrine for deploy/ops, and turn completed design into physical topology, rollout, operations, monitoring, emergency, and rehearsal deliverables."
 version: 1.1.0
-author: Hermes Agent
+author: Architect Skill Pack
 license: MIT
 metadata:
   hermes:

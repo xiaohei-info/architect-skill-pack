@@ -2,7 +2,7 @@
 name: arch-lifecycle-tech-overview-system-arch-diagramming
 description: "Use when an architect in overview technical design must produce or review the 系统架构图 and needs the fully merged system-architecture specialist method directly inside the new lifecycle family."
 version: 1.1.0
-author: Hermes Agent
+author: Architect Skill Pack
 license: MIT
 metadata:
   hermes:
@@ -465,7 +465,7 @@ Prefer labels such as:
 - `Billing API / Connector API`
 
 Avoid labels that are too fuzzy to guide later interface design, such as:
-- `Hermes runtime`
+- `agent runtime`
 - `RAG 基座`
 - `技能市场接入`
 - `外部系统集成`

@@ -2,7 +2,7 @@
 
 This directory groups the public skill collection into three architecture bundles.
 
-The bundle structure is **for browsing and method adoption**, not only for one host runtime. Hermes can install these folders directly; OpenCode, Codex, Claude Code, and similar agents can use the same folders as architecture playbooks.
+The bundle structure is **for browsing and method adoption**. Any host that supports `SKILL.md` folder loading can install directly; other hosts can use the folders as architecture playbooks.
 
 ## Bundles
 

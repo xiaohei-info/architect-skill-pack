@@ -2,7 +2,7 @@
 name: arch-lifecycle-solution-design-methodology
 description: "Use when an architect must run the solution-design stage after demand research, preserve the full lifecycle-stage doctrine for this stage, and turn business research into solution-design outputs such as business flow, domain model, solution architecture, risk controls, and milestone framing."
 version: 1.1.0
-author: Hermes Agent
+author: Architect Skill Pack
 license: MIT
 metadata:
   hermes:

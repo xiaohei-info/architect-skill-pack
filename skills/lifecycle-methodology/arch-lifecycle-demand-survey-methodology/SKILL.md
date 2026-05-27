@@ -2,7 +2,7 @@
 name: arch-lifecycle-demand-survey-methodology
 description: "Use when an architect must start at the demand-research stage, turn a business problem into a researchable architecture problem, and preserve the full lifecycle-stage doctrine for what to ask, what to answer, and what the business-research document must contain."
 version: 1.1.0
-author: Hermes Agent
+author: Architect Skill Pack
 license: MIT
 metadata:
   hermes:

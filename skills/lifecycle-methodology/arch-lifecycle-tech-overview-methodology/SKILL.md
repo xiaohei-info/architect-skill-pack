@@ -2,7 +2,7 @@
 name: arch-lifecycle-tech-overview-methodology
 description: "Use when an architect must run the overview-design portion of technical design, preserve the full lifecycle-stage doctrine for shared technical-design entry and overview design, and define goals, alternatives, functional layering, system structure, risk, and overview-level design boundaries before detailed design begins."
 version: 1.1.0
-author: Hermes Agent
+author: Architect Skill Pack
 license: MIT
 metadata:
   hermes:

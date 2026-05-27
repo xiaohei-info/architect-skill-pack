@@ -28,6 +28,6 @@ Include one or more of:
 
 ## Environment (if relevant)
 
-- Hermes version:
-- Host/runtime:
+- Host/runtime version:
+- Host/runtime name:
 - OS:

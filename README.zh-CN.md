@@ -8,7 +8,7 @@
 
 **一套可复用、开源、面向架构工作的技能包：覆盖方案调研、解决方案设计、技术概要设计、详细设计、部署交付，以及各类架构图方法。**
 
-这套技能包**不是只给 Hermes 用的**。它目前以 `SKILL.md` 目录结构打包，便于直接安装到 Hermes；但其核心方法同样面向 **OpenCode、Codex、Claude Code** 以及其他通用 agent runtime。
+这是一个**通用架构方法包**。任何 agent runtime、宿主系统或架构团队都可以使用。
 
 当你的架构工作出现这些问题时，可以使用这个仓库：
 - 需求还很模糊，就直接进入实现
@@ -33,12 +33,13 @@
 
 ## 运行时适配性
 
-这个仓库至少有两种使用方式：
+任何 agent runtime、宿主系统或架构团队都可以使用这个技能包。
 
-- **直接安装路径**：Hermes 用户可以直接安装 skill 目录。
-- **方法库路径**：OpenCode、Codex、Claude Code 等 agent 可以把每个 skill 当成可复用的架构工作流说明，再映射到自己的 prompt、command、planner、subagent 机制中。
+两种常见使用方式：
+- **直接安装** — 支持 `SKILL.md` 目录加载的宿主可以直接安装
+- **方法库** — 把每个 skill 作为可复用的架构 playbook，映射到自己的 prompt、command、planner 或 workflow 模型
 
-具体映射方式见 [`docs/runtime-adaptation.md`](docs/runtime-adaptation.md)。
+具体适配方式见 [`docs/host-adaptation.md`](docs/host-adaptation.md)。
 
 ## 仓库包含什么
 
@@ -76,38 +77,39 @@
 
 ## 安装与采用路径
 
-### 路径 A：直接安装到 Hermes
+### 路径 A：直接安装（支持 `SKILL.md` 的宿主）
+
+如果你的宿主支持以 `SKILL.md` 为入口的目录式 skill 加载，可以直接安装。
 
 ### 前置条件
 
-在安装到 Hermes 之前，请确认：
-- 你已经有可用的 Hermes 环境
-- `~/.hermes/skills/` 路径可用，或可以自行创建
+在安装之前，请确认：
+- 宿主的 skill 库路径可用，或可以自行创建
 - 你会复制**整个 skill 目录**，而不是只复制 `SKILL.md`
 
 ```bash
 git clone https://github.com/xiaohei-info/architect-skill-pack.git
 cd architect-skill-pack
-mkdir -p ~/.hermes/skills/software-development
-cp -R skills/lifecycle-methodology/arch-lifecycle-delivery ~/.hermes/skills/software-development/
+mkdir -p <your-skill-library-path>
+cp -R skills/lifecycle-methodology/arch-lifecycle-delivery <your-skill-library-path>/
 ```
 
 完整说明见 [`docs/adoption-guide.md`](docs/adoption-guide.md)。
 
-### 路径 B：在 OpenCode、Codex、Claude Code 等 agent 中作为方法库使用
+### 路径 B：作为方法库使用
 
-如果你的宿主不支持 Hermes 式 skill 目录安装，可以这样使用：
+如果你的宿主不支持 `SKILL.md` 目录加载，可以把仓库作为方法库：
 
 1. 选择目标 skill 目录
 2. 阅读其中的 `SKILL.md` 以及相关 `references/` / `templates/`
-3. 映射到你宿主里的等价机制，例如：
+3. 映射到宿主的等价机制：
    - 可复用 prompt / playbook
    - custom command
    - planner checklist
-   - subagent / delegation 约束
-4. 尽量把宿主特有 wiring 放在公共 skill 之外
+   - workflow / delegation 约束
+4. 尽量把宿主特有的 wiring 放在公共 skill 之外
 
-具体映射方式见 [`docs/runtime-adaptation.md`](docs/runtime-adaptation.md)。
+具体适配方式见 [`docs/host-adaptation.md`](docs/host-adaptation.md)。
 
 ## 这个技能包为什么有价值
 
@@ -123,7 +125,7 @@ cp -R skills/lifecycle-methodology/arch-lifecycle-delivery ~/.hermes/skills/soft
 - [`AGENTS.md`](AGENTS.md)
 - [`docs/bundles.md`](docs/bundles.md)
 - [`docs/adoption-guide.md`](docs/adoption-guide.md)
-- [`docs/runtime-adaptation.md`](docs/runtime-adaptation.md)
+- [`docs/host-adaptation.md`](docs/host-adaptation.md)
 - [`docs/portability-notes.md`](docs/portability-notes.md)
 - [`docs/source-map.md`](docs/source-map.md)
 

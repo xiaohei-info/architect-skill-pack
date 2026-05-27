@@ -4,9 +4,9 @@
 
 Adopt this repository as a **modular architecture skill pack**, not as an all-or-nothing overwrite.
 
-This guide intentionally separates:
-- **direct installation** into hosts that support folder-based skill loading
-- **method adaptation** for general-purpose agents such as OpenCode, Codex, and Claude Code
+This guide separates:
+- **direct installation** into hosts with `SKILL.md` support
+- **method adaptation** for any other workflow
 
 ## Smallest useful adoption profiles
 
@@ -35,45 +35,39 @@ Use when you want the whole architecture-delivery chain available.
 Adopt:
 - all three bundles
 
-## Path A — direct install into Hermes
+## Path A — direct install (hosts with `SKILL.md` support)
 
-The public bundle structure is optimized for browsing. Hermes install paths still follow the original skill category.
-
-For this repository, every skill belongs under:
-
-```bash
-~/.hermes/skills/software-development/
-```
+The public bundle structure is optimized for browsing. Your host may use a different category layout.
 
 ### Example installs
 
 #### Install one skill
 
 ```bash
-mkdir -p ~/.hermes/skills/software-development
+mkdir -p <your-skill-library-path>
 cp -R skills/lifecycle-methodology/arch-lifecycle-delivery \
-  ~/.hermes/skills/software-development/
+  <your-skill-library-path>/
 ```
 
 #### Install one whole bundle
 
 ```bash
-mkdir -p ~/.hermes/skills/software-development
-cp -R skills/lifecycle-methodology/* ~/.hermes/skills/software-development/
+mkdir -p <your-skill-library-path>
+cp -R skills/lifecycle-methodology/* <your-skill-library-path>/
 ```
 
 #### Install the whole pack
 
 ```bash
-mkdir -p ~/.hermes/skills/software-development
-cp -R skills/lifecycle-methodology/* ~/.hermes/skills/software-development/
-cp -R skills/diagramming/* ~/.hermes/skills/software-development/
-cp -R skills/architecture-supplements/* ~/.hermes/skills/software-development/
+mkdir -p <your-skill-library-path>
+cp -R skills/lifecycle-methodology/* <your-skill-library-path>/
+cp -R skills/diagramming/* <your-skill-library-path>/
+cp -R skills/architecture-supplements/* <your-skill-library-path>/
 ```
 
-## Path B — method adaptation for OpenCode, Codex, Claude Code, and similar agents
+## Path B — method adaptation for other hosts or teams
 
-If the host does not support Hermes-style skill installation, use the repository as a method library.
+If the host does not support folder-based `SKILL.md` loading, use the repository as a method library.
 
 ### Recommended adaptation workflow
 
@@ -92,22 +86,16 @@ If the host does not support Hermes-style skill installation, use the repository
    - review rubrics
 5. keep host-specific glue outside the public method core when possible
 
-### Good examples by host
-
-- **OpenCode** — convert the chosen skill into a workspace playbook plus a task-routing convention
-- **Codex** — convert the chosen skill into a repo-side procedure, issue/plan companion, or reusable architecture checklist
-- **Claude Code** — convert the chosen skill into a repo-local method doc, command recipe, or architecture review rubric
-
-See [`docs/runtime-adaptation.md`](runtime-adaptation.md) for a more explicit mapping guide.
+See [`docs/host-adaptation.md`](host-adaptation.md) for more guidance.
 
 ## After adoption
 
 Use the skills deliberately in prompts, commands, or planning flows.
 
 Examples:
-- “Use `arch-lifecycle-delivery` to decide the correct architecture stage before proposing a design.”
-- “Use `technology-adoption-comparison` to compare these stack options.”
-- “Use `arch-lifecycle-tech-detailed-methodology` and `arch-lifecycle-tech-detailed-core-flow-diagramming` to turn this overview into implementation-ready detailed design.”
+- "Use `arch-lifecycle-delivery` to decide the correct architecture stage before proposing a design."
+- "Use `technology-adoption-comparison` to compare these stack options."
+- "Use `arch-lifecycle-tech-detailed-methodology` and `arch-lifecycle-tech-detailed-core-flow-diagramming` to turn this overview into implementation-ready detailed design."
 
 ## Verification
 

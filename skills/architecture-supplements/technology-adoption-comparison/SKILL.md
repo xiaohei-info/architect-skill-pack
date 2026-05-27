@@ -2,7 +2,7 @@
 name: technology-adoption-comparison
 description: "Structured methodology for comparing technology options (frameworks, platforms, tools) and documenting adoption decisions with evidence-based reasoning."
 version: 1.0.0
-author: Hermes Agent
+author: Architect Skill Pack
 license: MIT
 metadata:
   hermes:
@@ -149,7 +149,7 @@ A robust technology comparison requires evidence from multiple independent sourc
 
 ## References
 
-- `references/hermes-vs-openclaw-example.md` - Example comparison artifact shape
+- `references/runtime-comparison-example.md` - Example comparison artifact shape
 
 ## Related Skills
 

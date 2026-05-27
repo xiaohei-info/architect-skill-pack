@@ -2,7 +2,7 @@
 name: design-patterns-and-refactoring
 description: "Use when architecture or backend work needs pre-code structural guidance from design patterns, or post-code cleanup guidance from refactoring and code-smell-driven improvement."
 version: 1.0.0
-author: Hermes Agent
+author: Architect Skill Pack
 license: MIT
 metadata:
   hermes:

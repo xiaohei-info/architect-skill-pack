@@ -2,7 +2,7 @@
 name: ddd-domain-modeling-for-architecture
 description: "Use when architecture work hinges on DDD-style domain modeling: subdomains, bounded contexts, context relationships, aggregate boundaries, and how those decisions shape overview or detailed design artifacts."
 version: 1.1.0
-author: Hermes Agent
+author: Architect Skill Pack
 license: MIT
 metadata:
   hermes:

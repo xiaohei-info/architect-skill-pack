@@ -2,7 +2,7 @@
 name: arch-lifecycle-solution-design-biz-flow-diagramming
 description: "Use when an architect in the solution-design stage must produce or review a 业务流程图 that explains roles, steps, and handoff order without collapsing into system architecture, technical architecture, or detailed-design flow logic."
 version: 1.1.0
-author: Hermes Agent
+author: Architect Skill Pack
 license: MIT
 metadata:
   hermes:

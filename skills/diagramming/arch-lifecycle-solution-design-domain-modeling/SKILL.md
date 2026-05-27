@@ -2,7 +2,7 @@
 name: arch-lifecycle-solution-design-domain-modeling
 description: "Use when an architect in the solution-design stage must produce or review the 领域模型 artifact so business objects, semantic boundaries, and major relationships are explicit before technical design begins."
 version: 1.1.0
-author: Hermes Agent
+author: Architect Skill Pack
 license: MIT
 metadata:
   hermes:

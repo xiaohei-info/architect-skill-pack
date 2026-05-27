@@ -2,7 +2,7 @@
 name: arch-lifecycle-solution-design-biz-arch-diagramming
 description: "Use when an architect in the solution-design stage must produce or review the 业务解决方案架构图 and needs the fully merged specialist method directly inside the new lifecycle family instead of via a legacy wrapper skill."
 version: 1.1.0
-author: Hermes Agent
+author: Architect Skill Pack
 license: MIT
 metadata:
   hermes:

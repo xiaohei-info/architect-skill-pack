@@ -5,7 +5,7 @@ description: Use when an architect must run the detailed-design portion of techn
   the concrete runtime, project, flow, data, interface, non-functional, security,
   recovery, hardware, and implementation-plan surfaces needed for execution.
 version: 1.2.0
-author: Hermes Agent
+author: Architect Skill Pack
 license: MIT
 metadata:
   hermes:

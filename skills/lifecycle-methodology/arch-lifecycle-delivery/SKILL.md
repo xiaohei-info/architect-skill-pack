@@ -2,7 +2,7 @@
 name: arch-lifecycle-delivery
 description: "Use when an architect must decide which architecture lifecycle stage to enter next, route to the correct stage methodology skill, and apply the merged lifecycle backbone as one coherent delivery chain rather than as separate old and new skill systems."
 version: 1.2.0
-author: Hermes Agent
+author: Architect Skill Pack
 license: MIT
 metadata:
   hermes:

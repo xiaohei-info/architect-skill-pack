@@ -2,7 +2,7 @@
 name: arch-lifecycle-tech-detailed-core-flow-diagramming
 description: "Use when an architect in detailed technical design must produce or review the 关键流程图 or 状态机 and needs the fully merged branch-complete core-flow specialist method directly inside the new lifecycle family."
 version: 1.1.0
-author: Hermes Agent
+author: Architect Skill Pack
 license: MIT
 metadata:
   hermes:

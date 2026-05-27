@@ -2,7 +2,7 @@
 name: arch-lifecycle-tech-overview-functional-arch-diagramming
 description: "Use when an architect in overview technical design must produce or review the 系统功能架构图 and needs the fully merged functional-architecture specialist method directly inside the new lifecycle family."
 version: 1.1.0
-author: Hermes Agent
+author: Architect Skill Pack
 license: MIT
 metadata:
   hermes:
