@@ -2,6 +2,10 @@
 
 语言： [English](README.md) | [简体中文](README.zh-CN.md)
 
+[![Release](https://img.shields.io/github/v/release/xiaohei-info/architect-skill-pack?display_name=tag)](https://github.com/xiaohei-info/architect-skill-pack/releases)
+[![License](https://img.shields.io/github/license/xiaohei-info/architect-skill-pack)](LICENSE)
+[![Last Commit](https://img.shields.io/github/last-commit/xiaohei-info/architect-skill-pack)](https://github.com/xiaohei-info/architect-skill-pack/commits/main)
+
 **一套可复用、开源、面向架构工作的技能包：覆盖方案调研、解决方案设计、技术概要设计、详细设计、部署交付，以及各类架构图方法。**
 
 当你的架构工作出现这些问题时，可以使用这个仓库：
@@ -15,6 +19,15 @@
 - **单个 skill**
 - **单个 bundle**
 - **整套技能包**
+
+## 采用后你应该获得什么
+
+如果采用得当，你应该获得这些改进：
+- 在架构工作开始前先明确当前所处阶段
+- 更清晰地区分业务方案、系统架构、技术架构和部署交付产物
+- 让不同图真正回答不同问题，而不是相互重复
+- 让详细设计更接近可实现交付物，而不是停留在原则层
+- 让方案推荐自带权衡、复用判断与验证路径
 
 ## 仓库包含什么
 
@@ -51,6 +64,13 @@
 - `architecture-supplements/design-patterns-and-refactoring`
 
 ## 给 Hermes 的快速安装方式
+
+### 前置条件
+
+在安装到 Hermes 之前，请确认：
+- 你已经有可用的 Hermes 环境
+- `~/.hermes/skills/` 路径可用，或可以自行创建
+- 你会复制**整个 skill 目录**，而不是只复制 `SKILL.md`
 
 ```bash
 git clone https://github.com/xiaohei-info/architect-skill-pack.git

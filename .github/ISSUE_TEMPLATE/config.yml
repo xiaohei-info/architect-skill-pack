@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security issue
+    url: https://github.com/xiaohei-info/architect-skill-pack/security
+    about: Please use the private disclosure path described in SECURITY.md for security-sensitive reports.

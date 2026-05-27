@@ -2,6 +2,10 @@
 
 Languages: [English](README.md) | [简体中文](README.zh-CN.md)
 
+[![Release](https://img.shields.io/github/v/release/xiaohei-info/architect-skill-pack?display_name=tag)](https://github.com/xiaohei-info/architect-skill-pack/releases)
+[![License](https://img.shields.io/github/license/xiaohei-info/architect-skill-pack)](LICENSE)
+[![Last Commit](https://img.shields.io/github/last-commit/xiaohei-info/architect-skill-pack)](https://github.com/xiaohei-info/architect-skill-pack/commits/main)
+
 **A reusable open-source skill pack for architecture work: survey, solution design, technical overview, detailed design, deployment handoff, and architecture-grade diagrams.**
 
 Use this repository when your architect agent or architecture workflow has one of these failure modes:
@@ -12,6 +16,15 @@ Use this repository when your architect agent or architecture workflow has one o
 - detailed design is incomplete, so implementation starts without clear flows, contracts, or verification paths
 
 You can adopt **one skill**, **one bundle**, or the **full pack** depending on what your team is missing.
+
+## What you get
+
+If you adopt this pack well, you should get:
+- clearer stage selection before architecture work starts
+- better separation between business-solution, system, technical, and deployment artifacts
+- diagrams that answer distinct questions instead of repeating each other
+- more implementation-ready detailed design outputs
+- more explicit trade-offs, reuse decisions, and verification paths in architecture work
 
 ![architect-skill-pack social preview](assets/social-preview.svg)
 
@@ -60,6 +73,13 @@ Start with:
 - `architecture-supplements/design-patterns-and-refactoring`
 
 ## Quick install for Hermes
+
+### Prerequisites
+
+Before installing into Hermes, make sure:
+- you already have a working Hermes installation
+- your skill library path exists or can be created under `~/.hermes/skills/`
+- you will copy the **whole skill directory**, not only `SKILL.md`
 
 ### 1. Clone the repo
 
