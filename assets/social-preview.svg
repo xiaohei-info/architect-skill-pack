@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="640" fill="url(#bg)"/>
+  <rect x="64" y="64" width="1152" height="512" rx="24" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <text x="104" y="180" fill="#e2e8f0" font-size="64" font-family="Arial, Helvetica, sans-serif" font-weight="700">architect-skill-pack</text>
+  <text x="104" y="250" fill="#94a3b8" font-size="28" font-family="Arial, Helvetica, sans-serif">Open-source architecture skills for survey, staged design, diagramming, and delivery</text>
+  <g transform="translate(104,320)">
+    <rect x="0" y="0" width="260" height="72" rx="14" fill="#1d4ed8"/>
+    <text x="28" y="45" fill="#ffffff" font-size="30" font-family="Arial, Helvetica, sans-serif">survey first</text>
+    <rect x="300" y="0" width="290" height="72" rx="14" fill="#0f766e"/>
+    <text x="328" y="45" fill="#ffffff" font-size="30" font-family="Arial, Helvetica, sans-serif">stage by stage</text>
+    <rect x="630" y="0" width="360" height="72" rx="14" fill="#7c3aed"/>
+    <text x="658" y="45" fill="#ffffff" font-size="30" font-family="Arial, Helvetica, sans-serif">diagram with intent</text>
+  </g>
+  <text x="104" y="470" fill="#cbd5e1" font-size="34" font-family="Arial, Helvetica, sans-serif">17 skills · 3 bundles · Hermes-compatible · Portable methods</text>
+  <text x="104" y="530" fill="#64748b" font-size="24" font-family="Arial, Helvetica, sans-serif">xiaohei-info / public repository</text>
+</svg>
