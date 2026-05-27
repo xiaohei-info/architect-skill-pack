@@ -574,7 +574,7 @@ The goal is not protocol-level detail yet, but a clear statement of **what kind 
   - 适配要点：直接使用 C4 扩展（`!include C4_Container.puml`）；将本 Skill 的 HEX 色值映射到 `AddElementTag`；支持所有布局模式。
 
 - **SVG / HTML**
-  - 网页嵌入、交互式架构图、动态高亮、高精度输出场景使用 SVG / HTML；在当前 Hermes 能力面内，对应 `architecture-diagram` 这类 SVG / HTML 产图 skill。
+  - 网页嵌入、交互式架构图、动态高亮、高精度输出场景使用 SVG / HTML；在支持 SVG / HTML 产图或渲染能力的宿主中，可映射到相应的架构图生成器或可视化组件。
   - 适配要点：以 CSS 变量定义色板；利用 `<g>` 标签分组实现 Boundary；SVG 对任意布局（Mesh/Star/Symmetric）支持最好；可添加 hover 提示。
 
 Architect rule:

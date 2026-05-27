@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This repository is a library of reusable architect methods and Hermes-compatible skills.
+This repository is a library of reusable architect methods and `SKILL.md`-packaged assets that can be installed directly in Hermes or adapted into OpenCode, Codex, Claude Code, and similar agent runtimes.
 
 Use it as:
 - a source of installable `SKILL.md` packages
@@ -14,8 +14,9 @@ Use it as:
 When working in this repository:
 1. `README.md` — human-facing overview
 2. `docs/bundles.md` — what each bundle is for
-3. `docs/portability-notes.md` — what is Hermes-native vs portable
-4. target `skills/<bundle>/<skill-name>/SKILL.md`
+3. `docs/runtime-adaptation.md` — how the same methods map into different agent runtimes
+4. `docs/portability-notes.md` — what is host-native vs portable
+5. target `skills/<bundle>/<skill-name>/SKILL.md`
 
 ## Editing rules
 
@@ -33,7 +34,7 @@ Before release:
 - verify copied support files are present
 - remove or generalize environment-specific assumptions
 - ensure README and docs explain repo structure clearly
-- do not claim a method is fully generic if it still depends on Hermes-native primitives or one user's local topology
+- do not claim a method is fully generic if it still depends on host-native primitives or one user's local topology
 
 ## Installation model
 

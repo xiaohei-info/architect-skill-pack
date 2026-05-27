@@ -1,6 +1,6 @@
 # Source Map
 
-This repository is a public packaging of architect-role skills originally maintained as private profile-local skills in a Hermes environment.
+This repository is a public packaging of architect-role skills originally maintained as private role-local skills in an internal agent runtime environment.
 
 ## Original category
 

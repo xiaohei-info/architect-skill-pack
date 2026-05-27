@@ -8,6 +8,8 @@
 
 **一套可复用、开源、面向架构工作的技能包：覆盖方案调研、解决方案设计、技术概要设计、详细设计、部署交付，以及各类架构图方法。**
 
+这套技能包**不是只给 Hermes 用的**。它目前以 `SKILL.md` 目录结构打包，便于直接安装到 Hermes；但其核心方法同样面向 **OpenCode、Codex、Claude Code** 以及其他通用 agent runtime。
+
 当你的架构工作出现这些问题时，可以使用这个仓库：
 - 需求还很模糊，就直接进入实现
 - 业务方案、技术设计、部署运维被写成一团
@@ -29,9 +31,18 @@
 - 让详细设计更接近可实现交付物，而不是停留在原则层
 - 让方案推荐自带权衡、复用判断与验证路径
 
+## 运行时适配性
+
+这个仓库至少有两种使用方式：
+
+- **直接安装路径**：Hermes 用户可以直接安装 skill 目录。
+- **方法库路径**：OpenCode、Codex、Claude Code 等 agent 可以把每个 skill 当成可复用的架构工作流说明，再映射到自己的 prompt、command、planner、subagent 机制中。
+
+具体映射方式见 [`docs/runtime-adaptation.md`](docs/runtime-adaptation.md)。
+
 ## 仓库包含什么
 
-本仓库将 17 个 Hermes 兼容技能整理为 3 个公开 bundle：
+本仓库将 17 个架构角色 skill 整理为 3 个公开 bundle：
 
 - **lifecycle-methodology**：架构生命周期分阶段交付方法
 - **diagramming**：业务架构图、业务流程图、系统架构图、技术架构图、关键流程图等绘图方法
@@ -63,7 +74,9 @@
 - `architecture-supplements/ddd-domain-modeling-for-architecture`
 - `architecture-supplements/design-patterns-and-refactoring`
 
-## 给 Hermes 的快速安装方式
+## 安装与采用路径
+
+### 路径 A：直接安装到 Hermes
 
 ### 前置条件
 
@@ -81,6 +94,21 @@ cp -R skills/lifecycle-methodology/arch-lifecycle-delivery ~/.hermes/skills/soft
 
 完整说明见 [`docs/adoption-guide.md`](docs/adoption-guide.md)。
 
+### 路径 B：在 OpenCode、Codex、Claude Code 等 agent 中作为方法库使用
+
+如果你的宿主不支持 Hermes 式 skill 目录安装，可以这样使用：
+
+1. 选择目标 skill 目录
+2. 阅读其中的 `SKILL.md` 以及相关 `references/` / `templates/`
+3. 映射到你宿主里的等价机制，例如：
+   - 可复用 prompt / playbook
+   - custom command
+   - planner checklist
+   - subagent / delegation 约束
+4. 尽量把宿主特有 wiring 放在公共 skill 之外
+
+具体映射方式见 [`docs/runtime-adaptation.md`](docs/runtime-adaptation.md)。
+
 ## 这个技能包为什么有价值
 
 这套技能包的核心不是“多几份 prompt”，而是把架构工作中最容易失真的部分沉淀成可复用方法：
@@ -95,6 +123,7 @@ cp -R skills/lifecycle-methodology/arch-lifecycle-delivery ~/.hermes/skills/soft
 - [`AGENTS.md`](AGENTS.md)
 - [`docs/bundles.md`](docs/bundles.md)
 - [`docs/adoption-guide.md`](docs/adoption-guide.md)
+- [`docs/runtime-adaptation.md`](docs/runtime-adaptation.md)
 - [`docs/portability-notes.md`](docs/portability-notes.md)
 - [`docs/source-map.md`](docs/source-map.md)
 

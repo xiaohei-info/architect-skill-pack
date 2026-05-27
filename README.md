@@ -8,6 +8,8 @@ Languages: [English](README.md) | [简体中文](README.zh-CN.md)
 
 **A reusable open-source skill pack for architecture work: survey, solution design, technical overview, detailed design, deployment handoff, and architecture-grade diagrams.**
 
+This pack is **not Hermes-only**. It is packaged in `SKILL.md` form for easy Hermes installation, but the methods are also intended for **OpenCode, Codex, Claude Code, and other general-purpose agent runtimes**.
+
 Use this repository when your architect agent or architecture workflow has one of these failure modes:
 - it jumps from vague demand straight into implementation
 - architecture docs mix business framing, technical design, and deployment details into one blurry artifact
@@ -28,9 +30,18 @@ If you adopt this pack well, you should get:
 
 ![architect-skill-pack social preview](assets/social-preview.svg)
 
+## Runtime compatibility
+
+You can use this repository in at least two ways:
+
+- **Direct install path** — Hermes users can install the skill folders directly.
+- **Method library path** — OpenCode, Codex, Claude Code, and similar agents can treat each skill as a reusable architecture playbook, then map the steps into their own prompt, command, planner, or subagent workflow model.
+
+See [`docs/runtime-adaptation.md`](docs/runtime-adaptation.md) for concrete mapping guidance.
+
 ## What this pack contains
 
-This repository packages 17 Hermes-compatible skills into three public bundles:
+This repository packages 17 architect-role skills into three public bundles:
 
 - **lifecycle-methodology** — stage routing and end-to-end architecture delivery discipline
 - **diagramming** — business architecture, business flow, system architecture, technical architecture, and core-flow diagramming methods
@@ -72,7 +83,9 @@ Start with:
 - `architecture-supplements/ddd-domain-modeling-for-architecture`
 - `architecture-supplements/design-patterns-and-refactoring`
 
-## Quick install for Hermes
+## Installation paths
+
+### Path A: direct install into Hermes
 
 ### Prerequisites
 
@@ -106,7 +119,22 @@ mkdir -p ~/.hermes/skills/software-development
 cp -R skills/lifecycle-methodology/* ~/.hermes/skills/software-development/
 ```
 
-### 4. Preserve support files
+### 4. Path B: use as a method library in OpenCode, Codex, Claude Code, or similar agents
+
+If your host does not support Hermes-style skill installation, keep the repository as a workspace-side method library and do this instead:
+
+1. pick the target skill folder
+2. read its `SKILL.md` plus any `references/` or `templates/`
+3. map the workflow into your host's equivalent of:
+   - reusable prompt or playbook
+   - custom command
+   - planner checklist
+   - subagent/delegation pattern
+4. keep the host-specific wiring outside the public skill when possible
+
+See [`docs/runtime-adaptation.md`](docs/runtime-adaptation.md) for a runtime-by-runtime mapping guide.
+
+### 5. Preserve support files
 
 Always copy the whole skill directory, not only `SKILL.md`.
 
@@ -116,17 +144,17 @@ That means preserving any bundled:
 - `scripts/`
 - `assets/`
 
-## Use it even if you are not on Hermes
+## Use it outside Hermes too
 
-These skills are packaged in Hermes-compatible format, but most of the core methods are portable.
+Hermes is the easiest direct-install path because the repository already uses `SKILL.md` packaging, but the methods are meant to travel.
 
-Typical translations:
-- `skill loading` -> your prompt/module/method loading mechanism
-- `delegate_task` -> your child-agent or specialist-worker abstraction
-- `read_file/search_files/patch/write_file` -> your codebase tooling
-- `todo` -> your planner or execution state layer
+Practical host examples:
+- **OpenCode** — load a chosen skill as a workspace playbook or task-specific guidance file, then map its process into your agent, planner, and worker flow
+- **Codex** — use the skill as a reusable architecture procedure in repo docs, custom command wrappers, or issue/plan templates
+- **Claude Code** — use the skill as a repo-side method doc, command recipe, or architecture review checklist
+- **Other agent runtimes** — translate the trigger, steps, verification pattern, and output contract into your host's equivalent abstractions
 
-See [`docs/portability-notes.md`](docs/portability-notes.md) before adapting the pack into another runtime.
+See [`docs/runtime-adaptation.md`](docs/runtime-adaptation.md) and [`docs/portability-notes.md`](docs/portability-notes.md).
 
 ## Repository layout
 
@@ -140,6 +168,7 @@ docs/
   adoption-guide.md
   bundles.md
   portability-notes.md
+  runtime-adaptation.md
   social-preview.md
   source-map.md
 
@@ -168,8 +197,9 @@ The strongest ideas in this repo are:
 
 - [`AGENTS.md`](AGENTS.md) — repository working rules for agent collaborators
 - [`docs/adoption-guide.md`](docs/adoption-guide.md) — modular adoption paths and install guidance
+- [`docs/runtime-adaptation.md`](docs/runtime-adaptation.md) — how to apply the pack in Hermes, OpenCode, Codex, Claude Code, and similar hosts
 - [`docs/bundles.md`](docs/bundles.md) — bundle-by-bundle overview
-- [`docs/portability-notes.md`](docs/portability-notes.md) — what is Hermes-native vs portable
+- [`docs/portability-notes.md`](docs/portability-notes.md) — what is host-native vs portable
 - [`docs/source-map.md`](docs/source-map.md) — public bundle to original source mapping
 - [`CONTRIBUTING.md`](CONTRIBUTING.md) — contribution guidance
 - [`SECURITY.md`](SECURITY.md) — responsible disclosure path

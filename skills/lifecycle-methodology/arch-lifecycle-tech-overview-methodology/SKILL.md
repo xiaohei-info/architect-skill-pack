@@ -134,12 +134,12 @@ Reference: `references/panel-vs-gateway-boundary-from-source.md`
 **后果**: Overview design drifts from reality, creating subsystem boundaries that cannot be implemented because the external system doesn't expose them.
 
 **正确做法**: 
-1. Identify which external systems will be reused (Hermes, LightRAG, SkillHub, AI Relay, etc.)
+1. Identify which external systems will be reused (agent runtimes, knowledge systems, skill hubs, relay/integration services, etc.)
 2. Read their actual structure: API endpoints, source code routes, tool registry, config schema
-3. Map real capabilities to AI Team's adaptation layer before defining internal subsystems
+3. Map real capabilities to your product or adaptation layer before defining internal subsystems
 4. Only propose subsystem划分 that can be backed by verified external boundaries
 
-**Example**: Hermes does not have a separate "management subsystem" — management operations (job CRUD) are part of the Gateway API Server's `/api/jobs` endpoints. Subsystem划分 should reflect: Gateway (HTTP interface) + Agent Runtime (toolsets), not management/gateway/agentos.
+**Example**: if the chosen runtime does not expose a separate management surface, do not invent one just because the conceptual model sounds clean. Let subsystem划分 reflect the verified boundary between runtime access surfaces and execution primitives, not an unverified wish structure.
 
 ## V1 complexity control for overview design
 

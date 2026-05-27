@@ -19,7 +19,7 @@ A structured approach for evaluating competing technology options and documentin
 ## When to Use
 
 Use when:
-- Choosing between competing frameworks/platforms (e.g., Hermes vs OpenClaw, React vs Vue)
+- Choosing between competing frameworks/platforms (e.g., one agent runtime vs another, React vs Vue)
 - Evaluating whether to build vs buy vs adopt open source
 - Documenting technology decisions for architecture reviews
 - Creating adoption justification with trade-off analysis
@@ -149,8 +149,7 @@ A robust technology comparison requires evidence from multiple independent sourc
 
 ## References
 
-- `references/hermes-vs-openclaw-analysis.md` - Example complete analysis
-- `templates/adoption-decision-template.md` - Starter template
+- `references/hermes-vs-openclaw-example.md` - Example comparison artifact shape
 
 ## Related Skills
 
